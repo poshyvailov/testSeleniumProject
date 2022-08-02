@@ -2,12 +2,14 @@ package Leson13NewMavenProject;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FirstSimpleTest {
 
     @Test
-    public void simpleTest (){
-        Assert.assertTrue(true);
-        Assert.assertEquals(12, 6+6);
+    public void initDriver(){
+        WebDriver driver = new ChromeDriver();
+        driver.get("google.com");
     }
 }
